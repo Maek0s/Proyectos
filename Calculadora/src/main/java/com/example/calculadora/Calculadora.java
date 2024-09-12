@@ -310,7 +310,6 @@ public class Calculadora extends Application {
 
     @FXML
     void keyPressed(KeyEvent keyEvent) {
-        System.out.println("asd: " + keyEvent.getCode()); // Para saber que código de tecla es cada una
         
         if (keyEvent.getCode() == KeyCode.NUMPAD0 || keyEvent.getCode() == KeyCode.DIGIT0) {
             click("0");
