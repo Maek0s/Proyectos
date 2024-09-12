@@ -1,0 +1,20 @@
+Button {
+    -fx-border-color: gray;
+    -fx-border-radius: 10;
+    -fx-border-width: 1.5px;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 10;
+    -fx-background-insets: 1;
+}
+
+Button:hover {
+    -fx-background-color: rgb(211, 210, 210);
+}
+
+Button:pressed {
+    -fx-font-size: 18;
+}
+
+#background {
+    -fx-background-color: rgb(182, 182, 182);
+}
