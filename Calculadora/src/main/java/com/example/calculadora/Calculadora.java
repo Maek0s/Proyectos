@@ -151,7 +151,7 @@ public class Calculadora extends Application {
                 case "-":
                     operfloat = Float.parseFloat(lastresult) - Float.parseFloat(actualresult);
                     break;
-                case "*":
+                case "x":
                     operfloat = Float.parseFloat(lastresult) * Float.parseFloat(actualresult);
                     break;
                 case "/":
