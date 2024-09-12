@@ -236,6 +236,8 @@ public class Calculadora extends Application {
         } else {
             System.out.println("No puede haber más de una coma.");
         }
+
+        number0.requestFocus();
     }
 
     @FXML
@@ -251,6 +253,7 @@ public class Calculadora extends Application {
                 dividir(null);
             }
         }
+        number0.requestFocus();
     }
 
     /* SISTEMAS / SYSTEMS  */
@@ -343,6 +346,8 @@ public class Calculadora extends Application {
             delete(null);
         } else if (keyEvent.getCode() == KeyCode.DELETE) {
             deleteAll(null);
+        } else if (keyEvent.getCode() == KeyCode.COMMA) {
+            comma(null);
         }
 
     }
