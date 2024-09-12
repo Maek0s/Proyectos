@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.Calculadora">
+<VBox alignment="CENTER" prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.Calculadora">
    <children>
       <AnchorPane id="background" prefHeight="550.0" prefWidth="350.0" stylesheets="@style.css">
          <children>
@@ -41,7 +41,7 @@
                 <RowConstraints fillHeight="false" minHeight="78.57" prefHeight="78.57" vgrow="NEVER" />
               </rowConstraints>
                <children>
-                  <Button id="buttonNumber" fx:id="number7" focusTraversable="false" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click7" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="7" GridPane.rowIndex="1">
+                  <Button id="buttonNumber" fx:id="number7" focusTraversable="false" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click7" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="7" GridPane.rowIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -49,7 +49,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number8" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click8" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button id="buttonNumber" fx:id="number8" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click8" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -57,7 +57,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number9" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click9" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <Button id="buttonNumber" fx:id="number9" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click9" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -65,7 +65,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number4" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click4" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="4" GridPane.rowIndex="2">
+                  <Button id="buttonNumber" fx:id="number4" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click4" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="4" GridPane.rowIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -73,7 +73,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number5" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click5" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <Button id="buttonNumber" fx:id="number5" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click5" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -81,7 +81,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number6" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click6" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <Button id="buttonNumber" fx:id="number6" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click6" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -89,7 +89,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number1" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click1" onKeyPressed="#pressPAD" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="1" GridPane.rowIndex="3">
+                  <Button id="buttonNumber" fx:id="number1" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click1" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="1" GridPane.rowIndex="3">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -97,7 +97,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number2" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click2" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <Button id="buttonNumber" fx:id="number2" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click2" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -105,7 +105,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number3" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click3" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <Button id="buttonNumber" fx:id="number3" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click3" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -121,7 +121,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button id="buttonNumber" fx:id="number0" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click0" onKeyPressed="#pressPAD" onKeyReleased="#pressPAD" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <Button id="buttonNumber" fx:id="number0" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#click0" onKeyPressed="#keyPressed" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -169,7 +169,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="dividir" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#dividir" pickOnBounds="false" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="/" GridPane.columnIndex="3">
+                  <Button fx:id="dividir" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#dividir" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="/" GridPane.columnIndex="3">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -177,7 +177,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="delete" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#delete" pickOnBounds="false" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="←" GridPane.columnIndex="2">
+                  <Button fx:id="delete" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#delete" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="←" GridPane.columnIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -185,7 +185,7 @@
                         <Insets bottom="2.5" left="2.5" right="2.5" top="2.5" />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="deleteAll" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#deleteAll" pickOnBounds="false" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="CE" GridPane.columnIndex="1">
+                  <Button fx:id="deleteAll" maxHeight="73.57" maxWidth="82.5" minHeight="73.57" minWidth="82.5" mnemonicParsing="false" onAction="#deleteAll" prefHeight="73.57" prefWidth="82.5" stylesheets="@style.css" text="CE" GridPane.columnIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>

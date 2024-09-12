@@ -1,6 +1,10 @@
 /*
  * Hecho por @Maek0s
  *
+ * Fallos:
+ * 
+ * No tiene las comas en cuenta, entonces hace 1.1,321312
+ * 
  * Por hacer:
  * - Poner que funcione por numepad
  * - Hacer el historial ese de last result
@@ -98,6 +102,7 @@ public class Calculadora extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Calculadora.class.getResource("calculadora.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 350, 550);
+
         stage.setTitle("(Maek0s) Calculadora");
         stage.setScene(scene);
         stage.setResizable(false);
@@ -194,6 +199,8 @@ public class Calculadora extends Application {
         lastresult = "0";
         actualresult = "0";
         lb_lastresult.setText("");
+
+        number0.requestFocus();
     }
 
     @FXML
@@ -209,7 +216,6 @@ public class Calculadora extends Application {
             }
         }
         dot();
-        // System.out.println(actualresult + " delete " + result.getText());
     }
 
     /* OTROS BOTONES / OTHER BUTTONS */
@@ -274,8 +280,7 @@ public class Calculadora extends Application {
 
             result.setText(txt2);
         }
-
-        // System.out.println(actualresult + " | " + result.getText());
+        number0.requestFocus();
 
     }
 
@@ -294,35 +299,50 @@ public class Calculadora extends Application {
             System.out.println("El número es demasiado largo 16 máx.");
         }
         // System.out.println("2 ASDASDASD : " + result.getText());
-
+        
         dot();
     }
 
     @FXML
-    void pressPAD(KeyEvent event) {
-        System.out.println(event.getCode());
+    void keyPressed(KeyEvent keyEvent) {
+        System.out.println("asd: " + keyEvent.getCode()); // Para saber que código de tecla es cada una
         
-        if (event.getCode() == KeyCode.NUMPAD0 || event.getCode() == KeyCode.DIGIT0) {
+        if (keyEvent.getCode() == KeyCode.NUMPAD0 || keyEvent.getCode() == KeyCode.DIGIT0) {
             click("0");
-        } else if (event.getCode() == KeyCode.NUMPAD1 || event.getCode() == KeyCode.DIGIT1) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD1 || keyEvent.getCode() == KeyCode.DIGIT1) {
             click("1");
-        } else if (event.getCode() == KeyCode.NUMPAD2 || event.getCode() == KeyCode.DIGIT2) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD2 || keyEvent.getCode() == KeyCode.DIGIT2) {
             click("2");
-        } else if (event.getCode() == KeyCode.NUMPAD3 || event.getCode() == KeyCode.DIGIT3) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD3 || keyEvent.getCode() == KeyCode.DIGIT3) {
             click("3");
-        } else if (event.getCode() == KeyCode.NUMPAD4 || event.getCode() == KeyCode.DIGIT4) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD4 || keyEvent.getCode() == KeyCode.DIGIT4) {
             click("4");
-        } else if (event.getCode() == KeyCode.NUMPAD5 || event.getCode() == KeyCode.DIGIT5) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD5 || keyEvent.getCode() == KeyCode.DIGIT5) {
             click("5");
-        } else if (event.getCode() == KeyCode.NUMPAD6 || event.getCode() == KeyCode.DIGIT6) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD6 || keyEvent.getCode() == KeyCode.DIGIT6) {
             click("6");
-        } else if (event.getCode() == KeyCode.NUMPAD7 || event.getCode() == KeyCode.DIGIT7) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD7 || keyEvent.getCode() == KeyCode.DIGIT7) {
             click("7");
-        } else if (event.getCode() == KeyCode.NUMPAD8 || event.getCode() == KeyCode.DIGIT8) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD8 || keyEvent.getCode() == KeyCode.DIGIT8) {
             click("8");
-        } else if (event.getCode() == KeyCode.NUMPAD9 || event.getCode() == KeyCode.DIGIT9) {
+        } else if (keyEvent.getCode() == KeyCode.NUMPAD9 || keyEvent.getCode() == KeyCode.DIGIT9) {
             click("9");
+        } else if (keyEvent.getCode() == KeyCode.DIVIDE) {
+            operation("/");
+        } else if (keyEvent.getCode() == KeyCode.MULTIPLY) {
+            operation("x");
+        } else if (keyEvent.getCode() == KeyCode.ADD) {
+            operation("+");
+        } else if (keyEvent.getCode() == KeyCode.SUBTRACT) {
+            operation("-");
+        } else if (keyEvent.getCode() == KeyCode.ENTER) {
+            equal(null);
+        } else if (keyEvent.getCode() == KeyCode.BACK_SPACE) {
+            delete(null);
+        } else if (keyEvent.getCode() == KeyCode.DELETE) {
+            deleteAll(null);
         }
+
     }
 
     /* NUMEROS / NUMBERS */
