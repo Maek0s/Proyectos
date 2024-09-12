@@ -126,6 +126,8 @@ public class Calculadora extends Application {
         actualresult = actualresult.replace(",", ".");
         lastresult = lastresult.replace(",", ".");
 
+        number0.requestFocus();
+
         if (lastresult.equals("0") ) {
             lastresult = actualresult;
             switch (symbol) {
