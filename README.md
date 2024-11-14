@@ -1,4 +1,6 @@
 # Proyectos
+
+Mis proyectos a lo largo de cursar el grado superior de DAM (2023-2025)
  
 ## (1) Calculadora simple en JavaFX
 
