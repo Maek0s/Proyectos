@@ -22,3 +22,5 @@ Mis proyectos a lo largo de cursar el grado superior de DAM (2023-2025)
 
 Una simple web para acompañar a mi TFG, y así poder usarlo para dar publicidad al juego.
 <h3><a href="https://maek0s.github.io/PokeSharpWeb/">Ver página web</h3>
+ 
+<img src="https://github.com/user-attachments/assets/66f086d2-6b2a-4d95-8c1f-a10e29125db1" height="350px">
