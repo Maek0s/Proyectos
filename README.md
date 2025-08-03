@@ -1,5 +1,3 @@
-<p>Estos son mis proyectos a lo largo de cursar el <b>grado superior de DAM (2023-2025)</b></p>
-
 # Proyectos
 
 ## (6) Text&Code
