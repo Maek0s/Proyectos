@@ -1,6 +1,6 @@
 # Proyectos
 
-## (6) Text&Code
+## (7) Text&Code
 
 Se trata de una aplicación web y de escritorio para mejorar tu mecanografía, utilizando frases comunes e incluso un modo para practicar fragmentos de código.
 
