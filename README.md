@@ -2,14 +2,21 @@
 
 # Proyectos
 
-## (6) Proyecto TFG - PokeSharp (PRIVADO todavía)
+## (6) Text&Code
+
+Se trata de una aplicación web y de escritorio para mejorar tu mecanografía, utilizando frases comunes e incluso un modo para practicar fragmentos de código.
+
+<b>[Ver el Repositorio](https://github.com/Maek0s/TextCode)</b>
+<b>[Ver la página web](https://maek0s.github.io/TextCode/)</b>
+
+## (6) Proyecto TFG - PokeSharp
 
 Es un videojuego basado en Pokémon hecho con C# desde Godot Engine.
 
 Este repositorio tendrá que estar privado hasta el día de entrega por privacidad del proyecto.
 <!-- <h3><a href="https://github.com/Maek0s/PokeSharp">Ver repositorio</h3> -->
 
-## (5) Página web del TFG con HTML, CSS y JS (EN PROCESO)
+## (5) Página web del TFG con HTML, CSS y JS
 
 Una simple web para acompañar a mi TFG, y así poder usarlo para dar publicidad al juego,
 y que también el usuario pueda seguir el proceso del juego de forma más cercana, siguiendo lo
