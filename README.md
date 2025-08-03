@@ -6,7 +6,7 @@
 
 Se trata de una aplicación web y de escritorio para mejorar tu mecanografía, utilizando frases comunes e incluso un modo para practicar fragmentos de código.
 
-<b>[Ver el Repositorio](https://github.com/Maek0s/TextCode)</b>
+<b>[Ver el Repositorio](https://github.com/Maek0s/TextCode)</b> <br>
 <b>[Ver la página web](https://maek0s.github.io/TextCode/)</b>
 
 ## (6) Proyecto TFG - PokeSharp
